@@ -1,0 +1,24 @@
+<h1> Listing Stalkees </h1>
+
+<p id ="notice"><%= notice %> </p>
+
+<table>
+	<thead>
+		<tr>
+			<td> Twitter Handles </td>
+		</tr>
+	</thead>
+
+	<tbody>
+		 <% @stalkees.each do |stalkee| %>
+		<tr>
+			<td><%= stalkee.twitter_handle%></td>
+			<td><%= link_to 'Edit'  , edit_stalkee_path(stalkee)%></td> 
+			<td><%=	link_to 'Show'  , stalkee %></td>
+			<td><%=	link_to 'Delete', stalkee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
+
+<%= link_to 'Add New Stalkee', new_stalkee_path %>
