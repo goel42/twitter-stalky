@@ -42,7 +42,7 @@ class StalkeesController < ApplicationController
 			params.require(:stalkee).permit(:twitter_handle)
 		end
 
-		def before_action
+		def get_stalkee
 			@stalkee=Stalkee.find(params[:id])
 		end
 end
