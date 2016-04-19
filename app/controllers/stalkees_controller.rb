@@ -1,0 +1,2 @@
+class StalkeesController < ApplicationController
+end
