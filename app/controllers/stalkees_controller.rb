@@ -25,7 +25,7 @@ class StalkeesController < ApplicationController
 	end
 
 	def update
-		if @user.update(stalkee_params)
+		if @stalkee.update(stalkee_params)
 			redirect_to @stalkee
 		else
 			render 'edit'
@@ -34,6 +34,7 @@ class StalkeesController < ApplicationController
 
 	def destroy
 		@stalkee.destroy
+		redirect_to stalkees_path
 	end
 
 

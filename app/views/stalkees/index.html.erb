@@ -14,8 +14,8 @@
 		<tr>
 			<td><%= stalkee.twitter_handle%></td>
 			<td><%= link_to 'Edit'  , edit_stalkee_path(stalkee)%></td> 
-			<td><%=	link_to 'Show'  , stalkee %></td>
-			<td><%=	link_to 'Delete', stalkee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+			<td><%=	link_to 'Show'  , stalkee_path(stalkee) %></td>
+			<td><%=	link_to 'Delete', stalkee_path(stalkee), method: :delete, data: { confirm: 'Are you sure?' } %></td>
 		</tr>
 		<% end %>
 	</tbody>
