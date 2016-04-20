@@ -6,8 +6,7 @@ class StalkeesController < ApplicationController
 	end
 
 	def show
-		$client.user_timeline("gem") 
-		@tweets = $client.user_timeline(@stalkee.twitter_handle, {:count => 200})
+		
 	end
 
 	def new
