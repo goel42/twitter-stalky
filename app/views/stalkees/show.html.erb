@@ -23,7 +23,7 @@
 		<% @prev_id =0 %>
 
 		<% while @prev_id != @last_id do %>
-			<% @next_tweets = $client.user_timeline(@stalkee.twitter_handle, { :max_id => @last_id}) %>
+			<% @next_tweets = $client.user_timeline(@stalkee.twitter_handle, { :count=>200,:max_id => @last_id}) %>
 			
 			<% @next_tweets.each do |tweet| %>
 				<tr>
