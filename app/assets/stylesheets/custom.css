@@ -1,0 +1,268 @@
+/* This is custom CSS file */
+
+body {
+  font-size: 16px;
+  color: #000;
+  background-color: #f5f8fa;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* HEADER */
+#header-nav {
+  background-color: #4099FF;
+  border-radius: 0;
+  border: 0;
+}
+
+
+.navbar-brand {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.navbar-brand h1 { 
+  position: relative;
+  font-family: 'Lobster';
+  color: #FFFFFF;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { 
+  color: #e7e7e7;
+  font-size: 1em;
+  margin: 10px 0 25px 0;
+}
+.navbar-brand p span { 
+  vertical-align: middle;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #000000;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #FFFFFF;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: #FFFFFF;
+    opacity: 0.95;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #4099FF;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+/* HOME PAGE */
+
+#logo-img {
+    background: url('../images/logo.jpg') no-repeat;
+    width: 50px;
+    height: 50px;
+    margin: 5px 5px 5px 0;
+  }
+
+.jumbotron {
+	padding: 0;
+  	box-shadow: 0 0 50px #FFFFFF;
+  	height: auto;
+  	background-color: #FFFFFF;
+  	border: 2px solid #FFFFFF;
+  	opacity: 0.95;
+}
+
+.handle-title {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	height: auto;
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #4099FF;
+}
+
+
+.add-new {
+	margin: 10px 42.5% 10px 44%;
+}
+
+#logo-img {
+	float: left;
+    background-image: url('../images/logo.jpg') no-repeat;
+    width: 50px;
+    height: 50px;
+    margin: 5px 5px 5px 0;
+    clear: both;
+    border: 1px;
+  }
+
+#t-handle {
+	text-align: center;
+}
+
+.index-table {
+	margin: 0 40% 0 36%;
+}
+
+a {
+	color: #FFFFFF;
+}
+
+.new-form {
+	text-align: center;
+	margin: 0 40% 0 40%;
+}
+
+.back-button {
+	margin: 20px 40% 20px 48%;
+}
+
+.show-buttons {
+	margin: 10px 30% 0 42%;
+}
+
+.show-stalker-name {
+	text-align: center;
+	font-size: 1.4em;
+}
+
+.tweets {
+	position: relative;
+	padding: 10px 100px 10px 220px;
+	margin: 10px 40px 10px 40px;
+	width: 80%;
+}
+
+.show-table {
+	position: relative;
+	width: 80%
+}
+
+.tweet-separator {
+	position: relative;
+	width: 60%
+}
+
+
+.panel-footer {
+  position: fixed;
+  width: 102%;
+  margin-top: 30px;
+  margin-right: 0;
+  margin-left: 0;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  color: #FFFFFF;
+  text-align: center;
+  background-color: #4099FF;
+  border-top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+
+.nav-menu {
+	color: #000000;
+}
+
+.btn-primary {
+  background-color: #4099FF;
+}
+
+/* END HOME PAGE */
+
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .container .jumbotron {
+    height: auto;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  
+  /* End Header */
+
+  /* Home Page */
+
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+
+  /* End Home Page */
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { 
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { 
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { 
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+
+  /* Home Page */
+
+
+}
