@@ -75,7 +75,7 @@
 
 	<tbody class="show-table">
 		<% $client.user_timeline("gem") %>
-    <% @tweets = $client.user_timeline(@stalkee.twitter_handle) %>
+    <% @tweets = $client.user_timeline(@stalkee.twitter_handle, include_rts: true) %>
     <% @tweets.each do |tweet| %>
 		<tr>
 			<td class="tweets">
@@ -86,6 +86,22 @@
 		</tr>
 
 		<% end %>
+
+    <% last_id = @tweets.last.id %>
+    <% for i in (0...15) do %>
+      <% @next_tweets = $client.user_timeline(@stalkee.twitter_handle, count: 200, max_id: last_id-1, include_rts: true) %>
+      <% @next_tweets.each do |tweet| %>
+        <% count =count +1 %>
+        <tr>
+          <td class="tweets">
+          <hr id="tweet-separator">
+          <%= tweet.text %>
+          <hr id="tweet-separator">
+          </td>
+        </tr>
+      <% end %>
+      <% last_id=@next_tweets.last.id %>
+    <% end %>
 	</tbody>
 	</table>
 </div>
