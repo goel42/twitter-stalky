@@ -1,86 +1,12 @@
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TwitterStalky</title>
-    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Pacifico|Lobster' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
-  </head>
-  <body class="row">
-  <header>
-    <nav id="header-nav" class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-            <div id="logo-img" alt="Logo image">
-            	<img src="../images/logo.jpg">
-            </div>
-         
-
-          <div class="navbar-brand">
-            <h1>Twitter Stalky</h1>
-            <p>
-              <span>Stalking made easy!</span>
-            </p>
-          </div>
-
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        
-        <div id="collapsable-nav" class="collapse navbar-collapse ">
-           <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li class="active ">
-              <a href=#>
-                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-	<p id ="notice"><%= notice %> </p>
-
-	<div class="container jumbotron">
-		<div class="handle-title">
-			<h2>
-			Twitter Handles
-			</h2>
-		</div>
-	<table class="index-table">
-		<tbody>
-			 <% @stalkees.each do |stalkee| %>
-			<tr>
-				<td id="t-handle"><%= stalkee.twitter_handle%></td>
-				<td>
-				<button type="button" class="btn btn-primary btn-md add-new"><%= link_to 'Edit'  , edit_stalkee_path(stalkee)%>
-				</button>
-				</td> 
-				<td>
-				<button type="button" class="btn btn-primary btn-md add-new"><%= link_to 'Show'  , stalkee_path(stalkee) %>
-				</button>
-				</td>
-				<td>
-				<button type="button" class="btn btn-primary btn-md add-new"><%= link_to 'Delete', stalkee_path(stalkee), method: :delete, data: { confirm: 'Are you sure?' } %>
-				</button>
-				</td>
-			</tr>
-			<% end %>
-		</tbody>
-	</table>
-	<button type="button" class="btn btn-primary btn-md add-new"><span><%= link_to 'Add New Stalkee', new_stalkee_path %></span>
-	</button>
-	
-	</div>
-
-	<footer class="panel-footer col-lg-12 col-md-12">
-		&copy www.anujraajgoel.com
-	</footer>
-</body>
-</html>
+<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="jumbotron">
+    <h1>Twitter Handles</h1>
+    <% @stalkees.each do |stalkee| %>
+      <h1><%=link_to stalkee.twitter_handle,stalkee%></h1>
+      <%= link_to "Edit",edit_stalkee_path(stalkee),class:"btn btn-primary" %>
+      <!--<%= link_to "Show",stalkee,class:"btn btn-success" %>-->
+      <%= link_to "Delete",stalkee,method: :delete,data:{confirm:"Are you sure"},class:"btn btn-danger" %>
+    <% end %>
+  </div>
+</div>

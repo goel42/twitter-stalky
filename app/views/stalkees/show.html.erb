@@ -1,40 +1,37 @@
-<!-- use this only is show is not working -->
-
-
-<h1> Showing Tweets</h1>
-
-<%=link_to "Edit",edit_stalkee_path %> |
-<%=link_to "Delete",@stalkee, method: :delete,data:{confirm:"Are you Sure?"}%> |
-<%=link_to "Back",root_path %>
-
-<table>
-	<thead>
-		<tr>
-			<td> Twitter Posts </td>
-		</tr>
-	</thead>
-
-	<tbody>
-		<% $client.user_timeline("gem") %>
-		<% @tweets = $client.user_timeline(@stalkee.twitter_handle, include_rts: true) %>
-		<% @tweets.each do |tweet| %>
-		<tr>
-			<td><%= tweet.text %></td>
-		</tr>
-		<% end %>
-
-		<% last_id = @tweets.last.id %>
-		<% for i in (0...15) do %>
-			<% @next_tweets = $client.user_timeline(@stalkee.twitter_handle, count: 200, max_id: last_id-1, include_rts: true) %>
-			<% @next_tweets.each do |tweet| %>
-				<% count =count +1 %>
-				<tr>
+<div class="container">
+	<div class="jumbotron">
+		<h1>@<%= @stalkee.twitter_handle %></h1>
+		<%= link_to "Edit",edit_stalkee_path(@stalkee),class:"btn btn-primary" %>
+		<%= link_to "Back",root_path,class:"btn btn-success" %>
+		<%= link_to "Delete",@stalkee,method: :delete,data:{confirm:"Are you sure?"},class:"btn btn-danger" %>
+		<br><br>
+		<table class="table table-hover table-bordered">
+			<th>Tweets</th>
+			<% $client.user_timeline("gem") %>
+			<% @tweets = $client.user_timeline(@stalkee.twitter_handle, include_rts: true) %>
+			<% while @tweets.count > 0 do%>
+				<% @tweets.each do |tweet|%>
+					<tr>
 					<td><%= tweet.text %></td>
-				</tr>
+					</tr>
+				<% end %>
+				<% last_id = @tweets.last.id %>
+				<% @tweets = $client.user_timeline(@stalkee.twitter_handle, count: 200, max_id: last_id-1, include_rts: true) %>
 			<% end %>
-			<% last_id=@next_tweets.last.id %>
-		<% end %>
-		
-	</tbody>
-</table>
+		</table>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
