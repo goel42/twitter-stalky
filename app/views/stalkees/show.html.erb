@@ -3,3 +3,20 @@
 <%=link_to "Edit",edit_stalkee_path %> |
 <%=link_to "Delete",@stalkee, method: :delete,data:{confirm:"Are you Sure?"}%> |
 <%=link_to "Back",root_path %>
+
+<table>
+	<thead>
+		<tr>
+			<td> Twitter Posts </td>
+		</tr>
+	</thead>
+
+	<tbody>
+		<% @tweets.each do |tweet| %>
+		<tr>
+			<td><%= tweet.text %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
+
