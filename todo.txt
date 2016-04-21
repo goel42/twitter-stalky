@@ -1,0 +1,5 @@
+response time that makes the page appear unresponsive
+check for duplicates in index when tweets are shown
+back button in update not working
+(probably back buttons dont make sense remove them)
+position of add new stalkee in index
