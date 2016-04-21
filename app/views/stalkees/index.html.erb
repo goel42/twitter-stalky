@@ -4,7 +4,7 @@
     <h1>Twitter Handles</h1>
     <%= link_to 'Add New Stalkee', new_stalkee_path,class:"btn btn-success" %>
     <% @stalkees.each do |stalkee| %>
-      <h1><%=link_to stalkee.twitter_handle,stalkee%></h1>
+      <h1><%=link_to stalkee.twitter_handle,stalkee, target: "_blank"%></h1>
       <%= link_to "Edit",edit_stalkee_path(stalkee),class:"btn btn-primary" %>
       <!--<%= link_to "Show",stalkee,class:"btn btn-success" %>-->
       <%= link_to "Delete",stalkee,method: :delete,data:{confirm:"Are you sure"},class:"btn btn-danger" %>

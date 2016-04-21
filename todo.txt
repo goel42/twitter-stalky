@@ -6,6 +6,9 @@ position of add new stalkee in index
 
 regex
 
+keys remove
+database reset nhi ho rha heroku pe
+
 
 UI
 logo
