@@ -23,98 +23,62 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brand</a>
+      <img alt="Brand" src=".../assets/images/logo.jpg">
+      <%= link_to "Twitter Stalky",root_path,class:"navbar-brand" %>
+     <!--  <a class="navbar-brand" href="#">Twitter Stalky</a> -->
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+      
+      
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
+        <li><a href="http://www.anujraajgoel.com" target="_blank">About Me</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 <%= yield %>
+<br><br><br><br>
 <!-- footer-->
-<footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                  <!--   <div class="footer-col col-md-6">
-                        <h3>Location</h3>
-                        <p>Indian Institute of Information Technology<br>Allahabad, UP 211012</p>
-                    </div> -->
-                    <div class="footer-col col-md-12">
-                        <h3>Say , Hello! </h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://www.facebook.com/reachtoanujraaj" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://in.linkedin.com/in/anujraaj-goel-734137110
-" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            <!-- <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
-                            </li> -->
-                        </ul>
-                    </div>
-                  <!--   <div class="footer-col col-md-4">
-                        <h3>About Freelancer</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-                    </div> -->
-                </div>
-            </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <!-- Copyright &copy; --> Made with &hearts; by me!
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+<nav class="navbar navbar-default" style="position: relative; bottom: 0; margin-bottom: 0;">
+  <div class="container">
+    <h3>Say, Hello! </h3>
+    <ul class="list-inline">
+        <li>
+            <a href="https://www.facebook.com/reachtoanujraaj" class="btn-social btn-outline">Facebook</a>
+        </li>
+        <li>
+            <a href="#" class="btn-social btn-outline">Google +</a>
+        </li>
+         <li>
+            <a href="#" class="btn-social btn-outline">Twitter</a>
+        </li>
+        <li>
+            <a href="https://in.linkedin.com/in/anujraaj-goel-734137110" class="btn-social btn-outline">LinkedIn</a>
+        </li>
+        <br><br>
+        <li> <a href="www.anujraajgoel.com"> &copy www.anujraajgoel.com</a>
+        </li>
+        <!-- <li>
+            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+        </li> -->
+    </ul>
+    <section id="contact" class="map">
+      <div class="container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7206.68109699593!2d81.77184240000001!3d25.426875800000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x1f0c03a031f74c3f!2sIndian+Institute+of+Information+Technology+Allahabad!5e0!3m2!1sen!2sin!4v1460300193519" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen>
+          
+        </iframe>
 
+        <!-- <br />
+        <small>
+            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+        </small>
+        </iframe> -->
+       </div>
+    </section>
+  </div>
+</nav>
 
 </body>
 </html>
