@@ -1,16 +1,16 @@
 response time that makes the page appear unresponsive(probably progress bar)
-check for duplicates in index when tweets are shown
 back button in update not working
 (probably back buttons dont make sense remove them)
-position of add new stalkee in index
-
-regex
-
-keys remove
-database reset nhi ho rha heroku pe
-
+simple form me target _blank dalna hai
 
 UI
 logo
 glyphs
 favicon not accepting
+
+
+FINALS
+remove keys , deploy on heroku git
+reset database and put precog handle
+make a read me and how to configure file
+also present the usps

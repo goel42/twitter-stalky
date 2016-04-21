@@ -6,7 +6,7 @@
 		<%= link_to "Delete",@stalkee,method: :delete,data:{confirm:"Are you sure?"},class:"btn btn-danger" %>
 		<br><br>
 		<table class="table table-hover table-bordered">
-			<th align="center">Tweets</th>
+			<th style="text-align: center;">Tweets</th>
 			<% $client.user_timeline("gem") %>
 			<% @tweets = $client.user_timeline(@stalkee.twitter_handle, include_rts: true) %>
 			<% while @tweets.count > 0 do%>
