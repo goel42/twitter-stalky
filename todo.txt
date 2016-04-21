@@ -3,12 +3,6 @@ back button in update not working
 (probably back buttons dont make sense remove them)
 simple form me target _blank dalna hai
 
-UI
-logo
-glyphs
-favicon not accepting
-
-
 FINALS
 remove keys , deploy on heroku git
 reset database and put precog handle

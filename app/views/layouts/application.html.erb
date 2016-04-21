@@ -10,21 +10,26 @@
   <%= csrf_meta_tags %>
   <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
    <link href='https://fonts.googleapis.com/css?family=Pacifico|Lobster' rel='stylesheet' type='text/css'>
-   <link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
+  <%=favicon_link_tag "favicon" %>
 </head>
 <body style="text-align: center;">
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" >
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
+    <div class="navbar-header" >
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <img alt="Brand" src=".../assets/images/logo.jpg">
-      <%= link_to "Twitter Stalky",root_path,class:"navbar-brand" %>
+<!--       <img alt="Brand" src=".../assets/images/logo.jpg"> -->
+     
+      <%= link_to root_path,class:"navbar-brand" do %>
+          <%= image_tag "logo",alt:"logo",height:"70px",width:"75px"%>
+      <% end %>
+       <%= link_to "@myTwitterStalky",root_path,class:"navbar-brand" %>
+
      <!--  <a class="navbar-brand" href="#">Twitter Stalky</a> -->
     </div>
 
@@ -33,7 +38,7 @@
       
       
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://www.anujraajgoel.com" target="_blank">About Me</a></li>
+        <li><a href="http://www.anujraajgoel.com" target="_blank">  Made with &hearts; by me </a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -43,27 +48,30 @@
 <!-- footer-->
 <nav class="navbar navbar-default" style="position: relative; bottom: 0; margin-bottom: 0;">
   <div class="container">
-    <h3>Say, Hello! </h3>
+    <h2>Say, Hello! </h2>
+
     <ul class="list-inline">
+
         <li>
-            <a href="https://www.facebook.com/reachtoanujraaj" class="btn-social btn-outline">Facebook</a>
+            <a href="https://www.facebook.com/reachtoanujraaj" class="btn-social btn-outline"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
         </li>
         <li>
-            <a href="#" class="btn-social btn-outline">Google +</a>
+            <a href="#" class="btn-social btn-outline"><i class="fa fa-google-plus fa-3x" aria-hidden="true"></i></a>
         </li>
          <li>
-            <a href="#" class="btn-social btn-outline">Twitter</a>
+             <a href="#" class="btn-social btn-outline"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
         </li>
         <li>
-            <a href="https://in.linkedin.com/in/anujraaj-goel-734137110" class="btn-social btn-outline">LinkedIn</a>
+            <a href="https://in.linkedin.com/in/anujraaj-goel-734137110" class="btn-social btn-outline" ><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
         </li>
         <br><br>
-        <li> <a href="www.anujraajgoel.com"> &copy www.anujraajgoel.com</a>
-        </li>
+        
     </ul>
+
     <section id="contact" class="map">
-      <div class="container">
+<div class="container">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7206.68109699593!2d81.77184240000001!3d25.426875800000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x1f0c03a031f74c3f!2sIndian+Institute+of+Information+Technology+Allahabad!5e0!3m2!1sen!2sin!4v1460300193519" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen>
+          
         </iframe>
        </div>
     </section>
