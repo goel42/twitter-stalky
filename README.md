@@ -4,6 +4,7 @@ Also Hosted at www.twitter-stalky.herokuapp.com
 
 A simple portal built on Ruby on Rails that fetches all the twitter posts for a given Twitter Handle.
 Let the Stalking Begin!
+
 Note: Twitter API allows only a maximum of 200 timeline fetches in one call and a maximum of 3200 posts fetches
 
 How to configure?
