@@ -7,6 +7,7 @@ Let the Stalking Begin!
 Note: Twitter API allows only a maximum of 200 timeline fetches in one call and a maximum of 3200 posts fetches
 
 How to configure?
+
 1. Please create an application at apps.twitter.com
 2. Generate the Consumer Key(API Key) | Consumer Secret(API Secret) | Access Token| Access Token Secret
 3. Mention the credentials obtained above in /config/initializers/twitter.rb
