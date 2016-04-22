@@ -1,4 +1,3 @@
-response time that makes the page appear unresponsive(probably progress bar)
 back button in update not working
 (probably back buttons dont make sense remove them)
 simple form me target _blank dalna hai
