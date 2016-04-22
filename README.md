@@ -14,6 +14,10 @@ How to configure?
 3. Mention the credentials obtained above in /config/initializers/twitter.rb
 4. You are now good to go! Happy Stalking!
 
+TO-DO
+1. Translation support using Google Cloud Translate API
+2. Sentiment Analysis using HavenonDemand
+
 What goes  inside?
 
 1. Twitter gem to fetch the posts
