@@ -11,9 +11,10 @@ How to configure?
 1. Please create an application at apps.twitter.com
 2. Generate the Consumer Key(API Key) | Consumer Secret(API Secret) | Access Token| Access Token Secret
 3. Mention the credentials obtained above in /config/initializers/twitter.rb
-4. You are now good to go!
+4. You are now good to go! Happy Stalking!
 
 What goes  inside?
+
 1. Twitter gem to fetch the posts
 2. Simple_form gem for forms
 3. Twitter BootStrap for UI
